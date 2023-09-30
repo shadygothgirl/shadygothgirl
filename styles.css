@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/media/fonts/PLANE___.TTF') format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/media/myspace-pink\(background\).gif');
+    background-repeat: repeat;
+}
+
+.banner {
+    background: url('media/banner.jpeg') no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin: 30px;
+}
+
+.bio {
+    text-align: center;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 20px;
+    border: solid pink 3px;
+    backdrop-filter: blur(20px);
+    color: rgb(248, 45, 116);
+    font-family: 'CustomFont', sans-serif;
+}
+
+.bio p {
+    font-size: 18px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image {
+    flex: 0 1 calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: solid pink 3px;
+}
+
+@media (max-width: 768px) {
+    .images {
+        flex-direction: column;
+    }
+
+    .image {
+        flex: 1 1 100%;
+    }
+}
